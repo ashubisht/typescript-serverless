@@ -11,7 +11,7 @@ provider:
   runtime: nodejs8.10
 
 functions:
-  hello:
+  loaderio-4fec6a95acf27bc0791897740bd2057e:
     handler: handler.handler
     events:
       - http:

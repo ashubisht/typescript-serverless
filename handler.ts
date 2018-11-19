@@ -19,7 +19,7 @@ if(!connectionExist){
 }
 
 app.get('/', (req, res) =>{
-  res.send(JSON.stringify(connectionExist));
+  res.send("loaderio-4fec6a95acf27bc0791897740bd2057e");
 });
 
 app.get('/insertPeople', async (req, res) =>{
