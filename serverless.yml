@@ -10,6 +10,9 @@ provider:
   name: aws
   runtime: nodejs8.10
 
+custom:
+  webpackIncludeModules: true
+
 functions:
   hello:
     handler: handler.handler

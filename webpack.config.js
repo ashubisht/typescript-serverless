@@ -28,6 +28,12 @@ module.exports = {
     rules: [
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
       { test: /\.tsx?$/, loader: 'ts-loader' },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/, // in order to ignore built-in modules like path, fs, etc.
+        loaders: ['babel-loader'],
+        include: __dirname,
+      }
     ],
   },
 };
