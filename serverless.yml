@@ -31,3 +31,10 @@ functions:
       - http:
           method: get
           path: /insertVehicle
+  
+  getUserAndVehicle:
+    handler: handler.handler
+    events:
+      - http:
+          method: get
+          path: /query
