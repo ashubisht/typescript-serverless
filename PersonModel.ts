@@ -4,7 +4,7 @@ import {VehicleModel} from "./VehicleModel";
 export class PersonModel extends Model{
     
     public id : number;
-    public parent_id: number;
+    public parent_id: number | null;
     public firstName: string;
 
     static get tableName() {

@@ -11,7 +11,8 @@
     "knex": "^0.15.2",
     "objection": "^1.4.0",
     "pg": "^7.6.1",
-    "serverless-http": "^1.8.0"
+    "serverless-http": "^1.8.0",
+    "serverless-plugin-typescript": "^1.1.5"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.1",
