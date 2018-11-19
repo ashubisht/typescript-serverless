@@ -22,3 +22,10 @@ export const insertVehicle = async() =>{
         person_id: 2
     });
 }
+
+export const getUserAndVehicle = async() =>{
+    const response = await PersonModel.query().select("persons.*", "vehicle.*").
+        joinRelation("vehicle").where("persons.id", "<", "10").
+        orderBy("persons.id");
+    return response[0];
+}

@@ -32,4 +32,9 @@ app.get('/insertVehicle', async (req, res) =>{
   res.send(resp);
 });
 
+app.get('/query', async (req, res) =>{
+  const resp = await usderDao.getUserAndVehicle();
+  res.send(resp);
+});
+
 module.exports.handler = serverless(app);
