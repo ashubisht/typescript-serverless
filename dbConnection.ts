@@ -11,13 +11,13 @@ export const createOrGetConnection = async() =>{
             client: "pg",
             useNullAsDefault: true,
             connection: {
-                host : 'host',
-                user : 'username',
-                password : 'password',
-                database : 'databaseName',
+                host : 'postgresdb.cdjbpolwfnc8.us-east-1.rds.amazonaws.com',
+                user : 'utkarsh',
+                password : 'jhonygaddar',
+                database : 'postrgesdb',
                 ssl: true
             },
-            pool: { min: 0, max: 7 },
+            pool: { min: 0, max: 1 },
             acquireConnectionTimeout: 10000
         } as any);
     }

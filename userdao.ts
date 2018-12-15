@@ -13,7 +13,7 @@ export const insertPeople = async() =>{
 }
 
 export const insertVehicle = async() =>{
-    const vehicle = await VehicleModel.query().insert({
+    await VehicleModel.query().insert({
         model: "BMW",
         person_id: 1
     });
