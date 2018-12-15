@@ -12,8 +12,8 @@ export const createOrGetConnection = async() =>{
             useNullAsDefault: true,
             connection: {
                 host : 'postgresdb.cdjbpolwfnc8.us-east-1.rds.amazonaws.com',
-                user : 'utkarsh',
-                password : 'jhonygaddar',
+                user : 'u',
+                password : 'j',
                 database : 'postrgesdb',
                 ssl: true
             },
